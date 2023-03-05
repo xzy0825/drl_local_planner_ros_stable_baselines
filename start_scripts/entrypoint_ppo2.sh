@@ -76,7 +76,7 @@ do
         # Wait until training is done
         while (screen -list | grep -q "python");
         do
-        echo "sleep"
+        echo "training $agent_name"
         sleep 5
         done
 
