@@ -74,15 +74,12 @@ do
         screen -S python -X log
 
         # Wait until training is done
-        stime=`date %s`
         while (screen -list | grep -q "python");
         do
         echo "training $agent_name"
         echo "sleep"
         sleep 5
         done
-        etime=`date +%s`
-        echo "scale=0; ($etime - $stime)/60%60" | bc
 
         # Old training setup is closed, so that new one can be started.
         for ((i=1;i<=$num_sims;i++));
