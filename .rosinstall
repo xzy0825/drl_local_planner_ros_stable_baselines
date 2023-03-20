@@ -12,5 +12,6 @@
     version: flatland_integration
 - git:
     local-name: drl_local_planner_forks/stable-baselines
-    uri: https://github.com/RGring/stable-baselines.git
+    uri: https://github.com/xzy0825/drl_local_planner_ros_stable_baselines.git
+    #uri: https://github.com/RGring/stable-baselines.git
     version: added_1d_conv_layer

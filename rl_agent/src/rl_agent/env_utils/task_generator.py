@@ -67,8 +67,8 @@ class TaskGenerator():
                         "wagon.model.yaml"], "index": [0, 0, 0]}
 
 
-        self.__ped_file = "person_two_legged.model.yaml"
-        # self.__ped_file = "person_single_circle.model.yaml"
+        # self.__ped_file = "person_two_legged.model.yaml"
+        self.__ped_file = "person_single_circle.model.yaml"
 
         # Services
         self.__sim_step = rospy.ServiceProxy('%s/step' % self.NS, Step)
